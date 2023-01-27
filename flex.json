@@ -1,0 +1,94 @@
+{
+	"code": "mmx-example",
+	"name": "Example",
+	"version": "0.1.0",
+	"resourcegroup_code": "mmx-example",
+	"category": "text",
+	"initialization_template": "init.mvt",
+	"instance_template": "instance.mvt",
+	"styles": [
+		{
+			"filepath": "styles.css",
+			"resource_code": "mmx-example",
+			"attributes": [
+				{
+					"name": "type",
+					"value": "text/css"
+				},
+				{
+					"name": "media",
+					"value": "all"
+				},
+				{
+					"name": "rel",
+					"value": "stylesheet"
+				}
+			]
+		}
+	],
+	"scripts": [
+		{
+			"filepath": "scripts.js",
+			"resource_code": "mmx-example",
+			"attributes": [
+				{
+					"name": "type",
+					"value": "application/javascript"
+				}
+			]
+		}
+	],
+	"properties": [
+		{
+			"code": "content",
+			"prompt": "Content",
+			"type": "text"
+		},
+		{
+			"code": "color",
+			"prompt": "Color",
+			"type": "color"
+		}
+	],
+	"advanced_properties": [
+		{
+			"code": "spacing",
+			"prompt": "Spacing",
+			"properties": [
+				{
+					"code": "top",
+					"label": "px",
+					"max": 200,
+					"min": -50,
+					"placeholder": "40",
+					"prompt": "Top",
+					"required": false,
+					"step": 1,
+					"text_type": "number",
+					"type": "text"
+				},
+				{
+					"code": "bottom",
+					"label": "px",
+					"max": 200,
+					"min": -50,
+					"placeholder": "40",
+					"prompt": "Bottom",
+					"required": false,
+					"step": 1,
+					"text_type": "number",
+					"type": "text"
+				}
+			],
+			"type": "group"
+		}
+	],
+	"defaults": {
+		"content": {
+			"value": "Hello World"
+		},
+		"color": {
+			"value": "#000099"
+		}
+	}
+}
